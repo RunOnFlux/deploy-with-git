@@ -33,7 +33,8 @@
             "scripts": [],
             "prerender": false,
             "ssr": {
-              "entry": "server.ts"
+              "entry": "server.ts",
+              "tsConfig": "tsconfig.server.json"
             }
           },
           "configurations": {
