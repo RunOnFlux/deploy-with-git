@@ -16,7 +16,13 @@ Flux identifies Node.js projects by looking for `package.json` and lock files. I
 2. Detects your package manager (npm / yarn / pnpm)
 3. Runs `npm install` → `npm run build` → serves the output
 
-Angular's build (`ng build`) compiles your app into a static bundle of HTML, CSS, and JS in `dist/deploy-angular/browser/`. Flux serves this using its built-in static file server — no separate Node.js process is needed at runtime.
+Angular's build (`ng build`) compiles your app into a static bundle of HTML, CSS, and JS. Flux serves this using its built-in static file server — no separate Node.js process is needed at runtime.
+
+> **Important:** Angular 17+ outputs to `dist/<project-name>/browser/` by default, which is a nested path the static server won't find. This project configures a flat output in `angular.json` so `index.html` lands directly in `dist/`:
+> ```json
+> "outputPath": { "base": "dist", "browser": "" }
+> ```
+> Keep this in your `angular.json` when adapting this project.
 
 ---
 
