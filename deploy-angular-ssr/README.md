@@ -77,7 +77,7 @@ Enter your own domain here. You'll need to configure your DNS separately to [poi
 ### Advanced Options
 
 - **Auto-Update Polling Interval**: how often Flux checks your repository for new commits. Defaults to **24 hours**. For instant deploys on every push, set up a GitHub Webhook and add `WEBHOOK_SECRET` to your environment variables instead.
-- **Enterprise App**: encrypts your app specifications and runs exclusively on ArcaneOS nodes for enhanced security and privacy.
+- **Enterprise App**: encrypts your app specifications, secrets and ENVs and runs exclusively on ArcaneOS nodes for enhanced security and privacy.
 
 ### Runtime Version (Optional)
 
