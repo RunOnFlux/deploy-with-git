@@ -31,7 +31,7 @@ Make sure your repository is public, or have a [GitHub personal access token](ht
 1. Go to [https://cloud.runonflux.com/apps/register/orbit](https://cloud.runonflux.com/apps/register/orbit)
 2. **Login or create an account**
 3. Click **Start Deploying** on your preferred plan
-4. Paste your **Repository URL**, select your **branch** and the **path** to this folder (e.g., `deploy-docusaurus/` if it's inside a monorepo), then click **Continue**
+4. Paste your **Repository URL**, select your **branch** and the **path**  (e.g., `deploy-docusaurus/` if it's inside a monorepo), then click **Continue**
    - For private repos, provide your GitHub access token
 5. Fill in the configuration form (see [Configuration](#configuration) below) and click **Continue**
 6. **Review and Register** your app
