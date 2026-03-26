@@ -1,0 +1,4 @@
+node_modules/
+dist/
+.output/
+app.config.timestamp_*.js

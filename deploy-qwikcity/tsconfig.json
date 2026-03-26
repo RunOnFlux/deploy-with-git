@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": ["ES2017", "DOM", "DOM.Iterable"],
+    "strict": true,
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "resolveJsonModule": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "jsxImportSource": "@builder.io/qwik",
+    "skipLibCheck": true
+  },
+  "include": ["src", "adaptors"]
+}
