@@ -5,14 +5,15 @@
   "type": "module",
   "scripts": {
     "build": "vite build",
-    "start": "node dist/server/server.js",
+    "start": "node server-node.mjs",
     "dev": "vite dev"
   },
   "dependencies": {
     "@tanstack/react-router": "^1.114.0",
     "@tanstack/react-start": "^1.114.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "srvx": "^0.7.0"
   },
   "devDependencies": {
     "@types/react": "^19.0.0",
