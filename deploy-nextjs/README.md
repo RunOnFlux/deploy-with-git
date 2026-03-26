@@ -1,10 +1,10 @@
 # Deploying a Next.js App on Flux Network with Deploy With Git
 
-This is a minimal Next.js "Hello World" app ready to be deployed on [Flux Network](https://runonflux.com) using the [Deploy With Git](https://cloud.runonflux.com/apps/register/orbit) feature.
+This is a minimal Next.js "Hello World" app ready to be deployed on [Flux Network](https://runonflux.com) using the [Deploy With Git](https://cloud.runonflux.com/apps/register) feature.
 
 ## What is Deploy With Git?
 
-[Deploy With Git](https://cloud.runonflux.com/apps/register/orbit) lets you deploy directly from a Git repository. Flux automatically detects your framework, installs dependencies, builds, and runs your app across its decentralized network of nodes.
+[Deploy With Git](https://cloud.runonflux.com/apps/register) lets you deploy directly from a Git repository. Flux automatically detects your framework, installs dependencies, builds, and runs your app across its decentralized network of nodes.
 
 ---
 
@@ -29,7 +29,7 @@ Make sure your repository is public, or have a [GitHub personal access token](ht
 
 ### 2. Register your app on FluxCloud
 
-1. Go to [https://cloud.runonflux.com/apps/register/orbit](https://cloud.runonflux.com/apps/register/orbit)
+1. Go to [https://cloud.runonflux.com/apps/register](https://cloud.runonflux.com/apps/register) and choose Deploy with Git
 2. **Login or create an account**
 3. Click **Start Deploying** on your preferred plan
 4. Paste your **Repository URL**, select your **branch** and the **path** to the folder (e.g., `deploy-nextjs/` if it's inside a monorepo), then click **Continue**

@@ -4,7 +4,7 @@ This is a minimal Qwik City 1 "Hello World" app ready to be deployed on [Flux Ne
 
 ## What is Deploy With Git?
 
-[Deploy With Git](https://cloud.runonflux.com/apps/register/orbit) lets you deploy directly from a Git repository. Flux automatically detects your framework, installs dependencies, builds, and runs your app across its decentralized network of nodes.
+[Deploy With Git](https://cloud.runonflux.com/apps/register) lets you deploy directly from a Git repository. Flux automatically detects your framework, installs dependencies, builds, and runs your app across its decentralized network of nodes.
 
 ---
 
@@ -28,7 +28,7 @@ Make sure your repository is public, or have a [GitHub personal access token](ht
 
 ### 2. Register your app on FluxCloud
 
-1. Go to [https://cloud.runonflux.com/apps/register/orbit](https://cloud.runonflux.com/apps/register/orbit)
+1. Go to [https://cloud.runonflux.com/apps/register](https://cloud.runonflux.com/apps/register) and choose Deploy with Git
 2. **Login or create an account**
 3. Click **Start Deploying** on your preferred plan
 4. Paste your **Repository URL**, select your **branch** and the **path**  (e.g., `deploy-qwikcity/` if it's inside a monorepo), then click **Continue**
