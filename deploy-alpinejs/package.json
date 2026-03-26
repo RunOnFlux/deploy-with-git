@@ -1,0 +1,20 @@
+{
+  "name": "deploy-alpinejs",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "start": "vite preview --port ${PORT:-4173} --host",
+    "dev": "vite dev"
+  },
+  "dependencies": {
+    "alpinejs": "^3.0.0"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
