@@ -1,0 +1,16 @@
+{
+  "name": "deploy-astro",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "astro build",
+    "start": "astro preview --port ${PORT:-4321} --host",
+    "dev": "astro dev"
+  },
+  "dependencies": {
+    "astro": "^4.5.18"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
