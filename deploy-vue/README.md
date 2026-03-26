@@ -4,7 +4,7 @@ This is a minimal Vue 3 "Hello World" app (built with Vite) ready to be deployed
 
 ## What is Deploy With Git?
 
-[Deploy With Git](https://docs.runonflux.com/fluxcloud/register-new-app/deploy-with-git/introduction) lets you deploy directly from a Git repository. Flux automatically detects your framework, installs dependencies, builds, and runs your app across its decentralized network of nodes.
+[Deploy With Git](https://cloud.runonflux.com/apps/register/orbit) lets you deploy directly from a Git repository. Flux automatically detects your framework, installs dependencies, builds, and runs your app across its decentralized network of nodes.
 
 ---
 
@@ -58,7 +58,7 @@ Flux auto-detects the port for static sites. The default is `80`. No changes nee
 
 ### Custom Domain (Optional)
 
-Enter your own domain here. You'll need to configure your DNS separately to point to Flux.
+Enter your own domain here. You'll need to configure your DNS separately to [point to Flux](https://docs.runonflux.com/fluxcloud/wordpress/custom-domain-setup/).
 
 ### Advanced Options
 
