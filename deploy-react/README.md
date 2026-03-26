@@ -1,6 +1,6 @@
 # Deploying a React App on Flux Network with Deploy With Git
 
-This is a minimal React "Hello World" app (built with Vite) ready to be deployed on [Flux Network](https://runonflux.com) using the [Deploy With Git](https://docs.runonflux.com/fluxcloud/register-new-app/deploy-with-git/) feature — no Docker required.
+This is a minimal React "Hello World" app (built with Vite) ready to be deployed on [Flux Network](https://runonflux.com) using the [Deploy With Git](https://docs.runonflux.com/fluxcloud/register-new-app/deploy-with-git/) feature.
 
 ## What is Deploy With Git?
 
