@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "esbuild src/index.js --bundle --platform=node --outfile=dist/server.js",
-    "start": "node dist/server.js",
+    "build": "esbuild src/index.js --bundle --platform=node --outfile=dist/server/index.js",
+    "start": "node dist/server/index.js",
     "dev": "node src/index.js"
   },
   "dependencies": {
