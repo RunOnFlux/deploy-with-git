@@ -88,9 +88,15 @@ Enter your own domain here. You'll need to configure your DNS separately to [poi
 
 Flux auto-detects the .NET version from `TargetFramework` in `deploy-blazor-wasm.csproj`. Only fill this in if you need a specific version. This project targets `net8.0`, so no manual selection is needed.
 
-### Environment Variables (Optional)
+### Environment Variables
 
-Flux exposes a set of **Git Variables** you can configure to override auto-detected behaviour:
+Because the Blazor WASM publish output contains multiple DLLs, you **must** set `RUN_COMMAND` so Flux knows which one to execute:
+
+| Git Variable | Description | Required |
+|---|---|---|
+| `RUN_COMMAND` | `dotnet deploy-blazor-wasm.dll` | **Yes** |
+
+Additional variables you can configure to override auto-detected behaviour:
 
 | Git Variable | Description | Default |
 |---|---|---|
