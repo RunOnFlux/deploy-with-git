@@ -52,7 +52,7 @@ This section explains each field on the app configuration page.
 
 ### Application Port
 
-The app reads the `PORT` environment variable. Set this to any available port (e.g., `8080`). Flux will route external traffic to it automatically.
+Set this to `8080` (the port the app listens on by default). This must match the port your app actually serves on — Flux uses this value to configure Docker port mappings correctly.
 
 ### Custom Domain (Optional)
 
