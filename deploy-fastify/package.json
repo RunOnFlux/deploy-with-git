@@ -1,0 +1,19 @@
+{
+  "name": "deploy-fastify",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "esbuild src/index.js --bundle --platform=node --outfile=dist/server.js",
+    "start": "node dist/server.js",
+    "dev": "node src/index.js"
+  },
+  "dependencies": {
+    "fastify": "^5.0.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
