@@ -1,0 +1,22 @@
+{
+  "name": "deploy-hexo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "hexo generate",
+    "start": "hexo server --port ${PORT:-4000}",
+    "dev": "hexo server"
+  },
+  "dependencies": {
+    "hexo": "^7.0.0",
+    "hexo-generator-index": "^3.0.0",
+    "hexo-renderer-ejs": "^2.0.0",
+    "hexo-renderer-marked": "^7.0.1"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "hexo": {
+    "version": "7.3.0"
+  }
+}

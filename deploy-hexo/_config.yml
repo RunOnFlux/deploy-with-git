@@ -1,0 +1,4 @@
+title: Hello, Flux!
+theme: minimal
+public_dir: public
+source_dir: source
