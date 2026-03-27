@@ -15,7 +15,7 @@ Flux identifies Python projects by looking for `requirements.txt`, `pyproject.to
 1. Reads the Python version from `.python-version` or the `PYTHON_VERSION` environment variable (defaults to `3.11`)
 2. Installs dependencies via `pip install -r requirements.txt`
 3. Runs `post-build.sh`, which executes `mkdocs build` to generate the `site/` directory
-4. Detects `site/` as static output and serves it with the built-in static file server — no separate Python process needed at runtime
+4. Detects `app.py` as the entry point and runs it — `app.py` serves the `site/` directory using Python's built-in HTTP server
 
 ---
 
@@ -53,7 +53,7 @@ This section explains each field on the app configuration page.
 
 ### Application Port
 
-Flux auto-detects the port for static sites. The default is `80`. No changes needed.
+The default port is `80`. `app.py` reads the `PORT` environment variable set by Flux. No changes needed.
 
 ### Custom Domain (Optional)
 
@@ -89,7 +89,7 @@ set -e
 mkdocs build
 ```
 
-This generates the `site/` directory, which Flux then serves as a static site.
+This generates the `site/` directory. At runtime, `app.py` serves it using Python's built-in HTTP server.
 
 You can also add a **`post-deploy.sh`** — runs after the site goes live:
 ```bash
