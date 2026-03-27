@@ -1,0 +1,10 @@
+{
+  "name": "deploy-hono-bun",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "bun run index.ts"
+  },
+  "dependencies": {
+    "hono": "^4.0.0"
+  }
+}
