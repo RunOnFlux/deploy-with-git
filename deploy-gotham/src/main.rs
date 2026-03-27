@@ -3,7 +3,7 @@ use gotham::prelude::*;
 use gotham::router::builder::*;
 use gotham::router::Router;
 use gotham::state::State;
-use hyper::{Body, Response, StatusCode};
+use gotham::hyper::{Body, Response, StatusCode};
 
 const HTML: &str = r#"<!DOCTYPE html>
 <html lang="en">
