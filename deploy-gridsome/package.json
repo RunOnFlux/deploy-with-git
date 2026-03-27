@@ -1,0 +1,16 @@
+{
+  "name": "deploy-gridsome",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "NODE_OPTIONS=--openssl-legacy-provider gridsome build",
+    "start": "gridsome serve",
+    "dev": "gridsome develop"
+  },
+  "dependencies": {
+    "gridsome": "^0.7.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
