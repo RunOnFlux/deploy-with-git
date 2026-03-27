@@ -1,0 +1,10 @@
+{
+  "name": "deploy-elysia",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "bun run index.ts"
+  },
+  "dependencies": {
+    "elysia": "^1.0.0"
+  }
+}
