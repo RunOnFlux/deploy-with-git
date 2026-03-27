@@ -32,8 +32,7 @@ fn router() -> Router {
     })
 }
 
-#[tokio::main]
-async fn main() {
+fn main() {
     let port: u16 = std::env::var("PORT")
         .unwrap_or_else(|_| "8080".to_string())
         .parse()
@@ -41,5 +40,5 @@ async fn main() {
 
     let addr = format!("0.0.0.0:{port}");
     println!("Listening on {addr}");
-    gotham::start(addr, router()).await.unwrap();
+    gotham::start(addr, router()).unwrap();
 }
