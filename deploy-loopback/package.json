@@ -1,0 +1,26 @@
+{
+  "name": "deploy-loopback",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Hello Flux LoopBack 4 app",
+  "keywords": ["loopback-application"],
+  "main": "dist/server/index.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "lb-tsc",
+    "start": "node dist/server",
+    "dev": "npm run build && node dist/server"
+  },
+  "dependencies": {
+    "@loopback/core": "^6.1.6",
+    "@loopback/rest": "^14.0.8",
+    "tslib": "^2.0.0"
+  },
+  "devDependencies": {
+    "@loopback/build": "^11.0.8",
+    "@types/node": "^20.0.0",
+    "typescript": "~5.2.0"
+  }
+}
