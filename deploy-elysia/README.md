@@ -10,7 +10,7 @@ This is a minimal Elysia "Hello World" app ready to be deployed on [Flux Network
 
 ## How Flux Detects Your Elysia App
 
-Flux identifies Bun projects by looking for `bunfig.toml` or `bun.lockb`. It then:
+Flux identifies Bun projects by looking for `bun.lock`, `bun.lockb`, or `bunfig.toml`. It then:
 
 1. Reads the Bun version from `.bun-version` or the `BUN_VERSION` environment variable (defaults to latest)
 2. Installs Bun
