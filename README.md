@@ -1,6 +1,6 @@
 # Deploy With Git: Example Apps
 
-A collection of minimal "Hello World" apps demonstrating how to deploy any framework to [Flux Network](https://runonflux.com) using the **Deploy With Git** feature. No CI pipelines, no Docker knowledge, no infrastructure to manage.
+A collection of "Hello World" apps demonstrating how to deploy any framework to [Flux Network](https://runonflux.com) using the **Deploy With Git** feature. No CI pipelines, no Docker knowledge, no infrastructure to manage.
 
 ---
 
