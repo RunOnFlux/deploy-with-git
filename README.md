@@ -1,6 +1,6 @@
-# Deploy With Git — Example Apps
+# Deploy With Git: Example Apps
 
-A collection of minimal "Hello World" apps demonstrating how to deploy any framework to [Flux Network](https://runonflux.com) using the **Deploy With Git** feature — no CI pipelines, no Docker knowledge, no infrastructure to manage.
+A collection of minimal "Hello World" apps demonstrating how to deploy any framework to [Flux Network](https://runonflux.com) using the **Deploy With Git** feature. No CI pipelines, no Docker knowledge, no infrastructure to manage.
 
 ---
 
@@ -8,11 +8,11 @@ A collection of minimal "Hello World" apps demonstrating how to deploy any frame
 
 [Deploy With Git](https://docs.runonflux.com/fluxcloud/register-new-app/deploy-with-git/) lets you deploy directly from a GitHub repository to Flux's decentralized cloud in minutes. Point it at your repo, and Flux handles the rest:
 
-- **Auto-detects your framework** — Node.js, Bun, Python, Ruby, PHP, Java, .NET, Go, Rust, and more
-- **Installs dependencies** — `npm install`, `pip install`, `composer install`, `bundle install`, `go mod download`, `cargo build`, etc.
-- **Builds your app** — runs your build script automatically when detected
-- **Runs your server** — starts the right process for your framework with zero configuration
-- **Deploys across multiple nodes** — your app runs on Flux's global decentralized network for high availability
+- **Auto-detects your framework**: Node.js, Bun, Python, Ruby, PHP, Java, .NET, Go, Rust, and more
+- **Installs dependencies**: `npm install`, `pip install`, `composer install`, `bundle install`, `go mod download`, `cargo build`, etc.
+- **Builds your app**: runs your build script automatically when detected
+- **Runs your server**: starts the right process for your framework with zero configuration
+- **Deploys across multiple nodes**: your app runs on Flux's global decentralized network for high availability
 
 Every push can trigger an automatic redeploy via [GitHub Webhooks](https://docs.runonflux.com/fluxcloud/register-new-app/deploy-with-git/ci-cd/github-webhooks), with automatic rollback if a new build fails.
 
@@ -20,7 +20,7 @@ Every push can trigger an automatic redeploy via [GitHub Webhooks](https://docs.
 
 ## Secrets & Environment Variables
 
-Environment variables are injected at runtime and never stored in your repository. For production workloads requiring the highest level of security, **Enterprise Mode** encrypts your entire app specification — including all environment variables and secrets — and runs exclusively on verified [ArcaneOS](https://runonflux.com) nodes. Your secrets are never exposed in plaintext anywhere in the deployment pipeline.
+Environment variables are injected at runtime and never stored in your repository. For production workloads requiring the highest level of security, **Enterprise Mode** encrypts your entire app specification (including all environment variables and secrets) and runs exclusively on verified [ArcaneOS](https://runonflux.com) nodes. Your secrets are never exposed in plaintext anywhere in the deployment pipeline.
 
 ---
 
@@ -29,9 +29,9 @@ Environment variables are injected at runtime and never stored in your repositor
 1. Go to [cloud.runonflux.com/apps/register](https://cloud.runonflux.com/apps/register) and choose **Deploy With Git**
 2. Paste your repository URL and select your branch
 3. Set your port and any environment variables
-4. Click **Register** — your app is live
+4. Click **Register** and your app is live
 
-> See the full guide: [Deploy With Git — Introduction](https://docs.runonflux.com/fluxcloud/register-new-app/deploy-with-git/introduction)
+> See the full guide: [Deploy With Git:Introduction](https://docs.runonflux.com/fluxcloud/register-new-app/deploy-with-git/introduction)
 
 ---
 
@@ -160,8 +160,8 @@ Environment variables are injected at runtime and never stored in your repositor
 
 ## Resources
 
-- [Deploy With Git — Overview](https://docs.runonflux.com/fluxcloud/register-new-app/deploy-with-git/)
-- [Deploy With Git — Introduction](https://docs.runonflux.com/fluxcloud/register-new-app/deploy-with-git/introduction)
+- [Deploy With Git:Overview](https://docs.runonflux.com/fluxcloud/register-new-app/deploy-with-git/)
+- [Deploy With Git:Introduction](https://docs.runonflux.com/fluxcloud/register-new-app/deploy-with-git/introduction)
 - [CI/CD with GitHub Webhooks](https://docs.runonflux.com/fluxcloud/register-new-app/deploy-with-git/ci-cd/github-webhooks)
 - [Environment Variables & Secrets](https://docs.runonflux.com/fluxcloud/register-new-app/deploy-with-git/)
 - [FluxCloud Dashboard](https://cloud.runonflux.com)
