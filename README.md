@@ -20,7 +20,7 @@ Every push can trigger an automatic redeploy via [GitHub Webhooks](https://docs.
 
 ## Secrets & Environment Variables
 
-Environment variables are injected at runtime and never stored in your repository. For production workloads requiring the highest level of security, **Enterprise Mode** encrypts your entire app specification (including all environment variables and secrets) and runs exclusively on verified [ArcaneOS](https://runonflux.com) nodes. Your secrets are never exposed in plaintext anywhere in the deployment pipeline.
+Environment variables are injected at runtime and never stored in your repository. For production workloads requiring the highest level of security, **Enterprise Mode** encrypts your entire app specification (including all environment variables and secrets) and runs exclusively on verified [ArcaneOS](https://docs.runonflux.com/fluxnodes/arcaneos-fluxnode/) nodes. Your secrets are never exposed in plaintext anywhere in the deployment pipeline.
 
 ---
 
