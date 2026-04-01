@@ -1,0 +1,16 @@
+{
+  "name": "deploy-vitepress",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs"
+  },
+  "devDependencies": {
+    "vitepress": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
