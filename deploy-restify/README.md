@@ -69,6 +69,8 @@ Enter your own domain here. You'll need to configure your DNS separately to [poi
 
 Flux auto-detects your runtime from your repository. Only fill this in if you need a specific version. Select **Node.js** and enter a version (e.g., `20`, `22` — LTS versions recommended). This project includes a `.nvmrc` file pinning Node 20, so no manual selection is needed.
 
+> **Note:** Restify's `spdy` dependency uses an internal Node.js binding (`process.binding('http_parser')`) that was removed in Node.js 22+. This project includes a `postinstall` patch (`scripts/patch-http-deceiver.js`) that automatically fixes this so Restify runs on any Node.js version.
+
 ### Environment Variables (Optional)
 
 Flux exposes a set of **Git Variables** you can configure to override auto-detected behaviour:

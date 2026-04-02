@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "postinstall": "node scripts/patch-http-deceiver.js",
     "start": "node index.js",
     "dev": "node --watch index.js"
   },
