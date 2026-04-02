@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "postinstall": "node scripts/patch-http-deceiver.js",
+    "postinstall": "node -e \"const fs=require('fs'),f='node_modules/http-deceiver/lib/deceiver.js';if(!fs.existsSync(f))process.exit(0);const c=fs.readFileSync(f,'utf8');if(c.includes(\\\"'modern'\\\")&&c.includes(\\\"process.binding\\\"))fs.writeFileSync(f,c.replace(/'modern';/,\\\"'old'; // Node 22+ patch\\\")),console.log('patch: http-deceiver patched');else console.log('patch: skipped');\"",
     "start": "node index.js",
     "dev": "node --watch index.js"
   },
