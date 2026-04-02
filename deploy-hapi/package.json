@@ -1,0 +1,15 @@
+{
+  "name": "deploy-hapi",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "dependencies": {
+    "@hapi/hapi": "^21.0.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
