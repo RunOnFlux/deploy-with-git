@@ -38,8 +38,18 @@ Flux will deploy your app across multiple nodes for high availability. Your site
 ```
 https://YOUR-APP-NAME.app.runonflux.com
 ```
+### Quick Deployment Link
 
+Click the button below and follow the wizard to deploy the sample project:
+
+[<img width="140" height="28" alt="deploy3" src="https://github.com/user-attachments/assets/782abbc4-106a-4221-b87c-2879d5cc3400" />](https://cloud.runonflux.io/apps/register/orbit?repo=https://github.com/RunOnFlux/deploy-with-git&branch=master&projectPath=deploy-actix-web)
+
+Add quick deployment link to your project
+```
+[<img width="140" height="28" alt="deploy3" src="https://github.com/user-attachments/assets/782abbc4-106a-4221-b87c-2879d5cc3400" />](https://cloud.runonflux.io/apps/register/orbit?repo=https://your-repo&branch=main&projectPath=/)
+```
 ---
+
 
 ## Configuration
 
