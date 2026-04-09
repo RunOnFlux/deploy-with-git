@@ -1,0 +1,6 @@
+{
+  "version": "1.0",
+  "appName": "deploy-actix-web",
+  "plan": "free",
+  "appPort": 8080
+}
