@@ -1,0 +1,173 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cloud.runonflux.com/schemas/orbit.deploy.schema.json",
+  "title": "Orbit Deployment Config",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version"],
+  "properties": {
+    "version": {
+      "type": "string",
+      "enum": ["1.0"],
+      "description": "Schema version."
+    },
+    "appName": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Display name for this deployment shown in the Orbit UI."
+    },
+    "plan": {
+      "type": "string",
+      "enum": ["free", "standard", "pro", "custom"],
+      "description": "Hosting plan. Choose 'custom' to specify exact resource limits."
+    },
+    "repo": {
+      "type": "string",
+      "pattern": "^https://(github\\.com|gitlab\\.com|bitbucket\\.org)/.+/.+",
+      "description": "HTTPS URL of the Git repository to deploy."
+    },
+    "branch": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Branch to build and deploy."
+    },
+    "projectPath": {
+      "type": "string",
+      "description": "Relative path to the project root within the repository (for monorepos)."
+    },
+    "appPort": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 65535,
+      "description": "Port the application listens on inside the container."
+    },
+    "outputDir": {
+      "type": "string",
+      "description": "Build output directory (e.g. 'dist', 'build'). Required for static site deployments."
+    },
+    "pollingInterval": {
+      "oneOf": [
+        { "type": "string", "enum": ["disabled"] },
+        { "type": "integer", "enum": [3600, 7200, 21600, 43200, 86400] }
+      ],
+      "description": "How often (in seconds) Orbit polls for new commits. Set to 'disabled' to turn off polling."
+    },
+    "autoDeploy": {
+      "type": "boolean",
+      "description": "Automatically trigger a deploy on every push to the configured branch."
+    },
+    "runtime": {
+      "type": "string",
+      "enum": ["Node.js", "Python", "Rust", "Go", "Java", ".NET", "Bun", "Ruby", "PHP"],
+      "description": "Runtime environment used to build and run the project."
+    },
+    "runtimeVersion": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Specific runtime version to use (e.g. '20', 'lts/*', '3.11')."
+    },
+    "framework": {
+      "type": "string",
+      "description": "Framework hint to pre-fill wizard defaults (e.g. 'nextjs', 'express', 'vite')."
+    },
+    "installCommand": {
+      "type": "string",
+      "description": "Command to install dependencies. Overrides the default (e.g. 'npm ci')."
+    },
+    "buildCommand": {
+      "type": "string",
+      "description": "Command to build the project. Overrides the default (e.g. 'npm run build')."
+    },
+    "runCommand": {
+      "type": "string",
+      "description": "Command to start the application. Overrides the default (e.g. 'node index.js')."
+    },
+    "prPreviewEnabled": {
+      "type": "boolean",
+      "description": "Spin up a preview deployment for each pull/merge request."
+    },
+    "envVars": {
+      "type": "array",
+      "description": "Environment variables injected at build and runtime.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["key", "value"],
+        "properties": {
+          "key": {
+            "type": "string",
+            "pattern": "^[A-Za-z_][A-Za-z0-9_]*$",
+            "description": "Environment variable name."
+          },
+          "value": {
+            "type": "string",
+            "description": "Environment variable value."
+          },
+          "secret": {
+            "type": "boolean",
+            "default": false,
+            "description": "Mark as secret — value will be masked in the UI and logs."
+          }
+        }
+      }
+    },
+    "allowedLocations": {
+      "type": "array",
+      "description": "Whitelist of Flux location codes where the app may run.",
+      "items": {
+        "type": "string",
+        "examples": ["acEU", "acNA_US", "acNA_US_California"]
+      }
+    },
+    "forbiddenLocations": {
+      "type": "array",
+      "description": "Blacklist of Flux location codes where the app must not run.",
+      "items": {
+        "type": "string",
+        "examples": ["a!cEU", "a!cNA_US", "a!cNA_US_California"]
+      }
+    },
+    "continent": {
+      "type": "string",
+      "description": "Preferred continent for deployment (overridden by allowedLocations if both are set).",
+      "examples": ["EU", "NA", "AS"]
+    },
+    "country": {
+      "type": "string",
+      "description": "Preferred country for deployment (ISO 3166-1 alpha-2).",
+      "examples": ["DE", "US", "JP"]
+    },
+    "region": {
+      "type": "string",
+      "description": "Preferred sub-region for deployment."
+    }
+  },
+  "if": {
+    "properties": { "plan": { "const": "custom" } },
+    "required": ["plan"]
+  },
+  "then": {
+    "properties": {
+      "instances": {
+        "type": "integer",
+        "minimum": 1,
+        "description": "Number of nodes to deploy the application across."
+      },
+      "cpu": {
+        "type": "number",
+        "exclusiveMinimum": 0,
+        "description": "CPU cores allocated per instance (e.g. 0.5, 1, 2)."
+      },
+      "ram": {
+        "type": "integer",
+        "minimum": 128,
+        "description": "RAM allocated per instance in MB (e.g. 512, 1024, 2048)."
+      },
+      "hdd": {
+        "type": "integer",
+        "minimum": 1,
+        "description": "Persistent storage allocated per instance in GB."
+      }
+    }
+  }
+}
