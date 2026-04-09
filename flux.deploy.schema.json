@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://cloud.runonflux.com/schemas/orbit.deploy.schema.json",
-  "title": "Orbit Deployment Config",
+  "$id": "https://cloud.runonflux.com/schemas/flux.deploy.schema.json",
+  "title": "Flux Deployment Config",
   "type": "object",
   "additionalProperties": false,
   "required": ["version"],
