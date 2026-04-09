@@ -21,20 +21,6 @@
       "enum": ["free", "standard", "pro", "custom"],
       "description": "Hosting plan. Choose 'custom' to specify exact resource limits."
     },
-    "repo": {
-      "type": "string",
-      "pattern": "^https://(github\\.com|gitlab\\.com|bitbucket\\.org)/.+/.+",
-      "description": "HTTPS URL of the Git repository to deploy."
-    },
-    "branch": {
-      "type": "string",
-      "minLength": 1,
-      "description": "Branch to build and deploy."
-    },
-    "projectPath": {
-      "type": "string",
-      "description": "Relative path to the project root within the repository (for monorepos)."
-    },
     "appPort": {
       "type": "integer",
       "minimum": 1,
