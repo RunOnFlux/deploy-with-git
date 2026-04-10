@@ -1,0 +1,12 @@
+{
+  "version": "1.0",
+  "plan": "free",
+  "appPort": 8080,
+  "envVars": [
+    {
+      "key": "APP_KEY",
+      "value": "base64:XOhwtzMxT/O5e3obsnOGhO8TjuAYhDY0oOzn9Pq+Qvo=",
+      "secret": true
+    }
+  ]
+}

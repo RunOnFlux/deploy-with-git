@@ -1,0 +1,12 @@
+{
+  "version": "1.0",
+  "plan": "free",
+  "appPort": 3333,
+  "envVars": [
+    {
+      "key": "APP_KEY",
+      "value": "base64:Q1yLLmD3ROt6DTwC0XVdF0uiWibmVboX2TZ1pAgXqzQ=",
+      "secret": true
+    }
+  ]
+}
