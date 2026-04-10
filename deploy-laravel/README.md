@@ -70,18 +70,25 @@ Flux defaults to PHP 8.2. Pin a specific version by setting the `PHP_VERSION` en
 
 ### Environment Variables
 
-Laravel requires `APP_KEY` to be set. Generate one with `php artisan key:generate --show` and add it as an environment variable in your Flux app configuration.
+#### Required
 
-Flux exposes a set of **Git Variables** you can configure to override auto-detected behaviour:
+| Variable | Description |
+|---|---|
+| `APP_KEY` | Laravel application encryption key. Generate one locally with `php artisan key:generate --show` and paste the result here. It looks like `base64:...`. **The app will not start without this.** |
 
-| Git Variable | Description | Default |
+#### Optional overrides
+
+| Variable | Description | Default |
 |---|---|---|
-| `PORT` | Port the server listens on | `8080` |
 | `PHP_VERSION` | PHP version to use | `8.2` |
-| `APP_KEY` | Laravel application key (**required**) | — |
 | `APP_ENV` | Laravel environment | `production` |
+| `APP_DEBUG` | Enable debug output | `false` |
+| `SESSION_DRIVER` | Session storage driver | `file` |
+| `CACHE_STORE` | Cache storage driver | `file` |
 | `BUILD_COMMAND` | Custom build command | — |
 | `WEBHOOK_SECRET` | Enables instant CI/CD via GitHub Webhooks | — |
+
+> **Note:** This project has no database. Session and cache use the `file` driver by default — no extra setup needed.
 
 ---
 
