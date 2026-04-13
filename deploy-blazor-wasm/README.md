@@ -47,6 +47,12 @@ Make sure your repository is public, or have a [GitHub personal access token](ht
 
 ### 2. Register your app on FluxCloud
 
+Click the button below to open the deployment wizard pre-filled for this project:
+
+[<img width="140" height="28" alt="deploy3" src="https://github.com/user-attachments/assets/782abbc4-106a-4221-b87c-2879d5cc3400" />](https://cloud.runonflux.io/apps/register/orbit?repo=https://github.com/RunOnFlux/deploy-with-git&branch=master&projectPath=deploy-blazor-wasm&plan=free)
+
+Or follow the manual steps:
+
 1. Go to [https://cloud.runonflux.com/apps/register](https://cloud.runonflux.com/apps/register) and choose Deploy with Git
 2. **Login or create an account**
 3. Click **Start Deploying** on your preferred plan
@@ -56,9 +62,15 @@ Make sure your repository is public, or have a [GitHub personal access token](ht
 6. **Review and Register** your app
 
 Flux will deploy your app across multiple nodes for high availability. Your site will be live at a URL like:
+
 ```
 https://YOUR-APP-NAME.app.runonflux.com
 ```
+
+> **Add this button to your own project:**
+> ```
+> [<img width="140" height="28" alt="deploy3" src="https://github.com/user-attachments/assets/782abbc4-106a-4221-b87c-2879d5cc3400" />](https://cloud.runonflux.io/apps/register/orbit?repo=https://your-repo&branch=main&projectPath=/)
+> ```
 
 ---
 
@@ -73,7 +85,7 @@ This section explains each field on the app configuration page.
 
 ### Application Port
 
-Set this to `8080` (the port the app listens on by default). This must match the port your app actually serves on — Flux uses this value to configure Docker port mappings correctly.
+Set this to `80`. Blazor WASM compiles to a static bundle of HTML, CSS, and JS — Flux serves it using its built-in static file server on port `80`. No server process is needed at runtime.
 
 ### Custom Domain (Optional)
 
@@ -100,7 +112,6 @@ Additional variables you can configure to override auto-detected behaviour:
 
 | Git Variable | Description | Default |
 |---|---|---|
-| `PORT` | Port the server listens on | `8080` |
 | `DOTNET_VERSION` | .NET SDK version to use | `8.0` (from `TargetFramework`) |
 | `BUILD_COMMAND` | Custom build command | `dotnet publish -c Release -o ./publish` |
 | `WEBHOOK_SECRET` | Enables instant CI/CD via GitHub Webhooks | — |
@@ -134,7 +145,7 @@ See the full guide: [GitHub Webhooks on Flux](https://docs.runonflux.com/fluxclo
 dotnet run
 ```
 
-Open [http://localhost:8080](http://localhost:8080) to see the app.
+Open [http://localhost:5000](http://localhost:5000) to see the app.
 
 ---
 
