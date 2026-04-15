@@ -28,6 +28,12 @@ Make sure your repository is public, or have a [GitHub personal access token](ht
 
 ### 2. Register your app on FluxCloud
 
+Click the button below to open the deployment wizard pre-filled for this project:
+
+[<img width="140" height="28" alt="deploy3" src="https://github.com/user-attachments/assets/782abbc4-106a-4221-b87c-2879d5cc3400" />](https://cloud.runonflux.io/apps/register/orbit?repo=https://github.com/RunOnFlux/deploy-with-git&branch=master&projectPath=deploy-solidjs&plan=free)
+
+Or follow the manual steps:
+
 1. Go to [https://cloud.runonflux.com/apps/register](https://cloud.runonflux.com/apps/register) and choose Deploy with Git
 2. **Login or create an account**
 3. Click **Start Deploying** on your preferred plan
@@ -37,9 +43,15 @@ Make sure your repository is public, or have a [GitHub personal access token](ht
 6. **Review and Register** your app
 
 Flux will deploy your app across multiple nodes for high availability. Your app will be live at a URL like:
+
 ```
 https://YOUR-APP-NAME.app.runonflux.com
 ```
+
+> **Add this button to your own project:**
+> ```
+> [<img width="140" height="28" alt="deploy3" src="https://github.com/user-attachments/assets/782abbc4-106a-4221-b87c-2879d5cc3400" />](https://cloud.runonflux.io/apps/register/orbit?repo=https://your-repo&branch=main&projectPath=/)
+> ```
 
 ---
 
