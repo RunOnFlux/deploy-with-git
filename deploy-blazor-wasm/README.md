@@ -67,7 +67,7 @@ Flux will deploy your app across multiple nodes for high availability. Your site
 https://YOUR-APP-NAME.app.runonflux.com
 ```
 
-> **Add this button to your own project:**
+> **Add Deploy to Flux button to your own project:**
 > ```
 > [<img width="140" height="28" alt="deploy3" src="https://github.com/user-attachments/assets/782abbc4-106a-4221-b87c-2879d5cc3400" />](https://cloud.runonflux.io/apps/register/orbit?repo=https://your-repo&branch=main&projectPath=/)
 > ```
