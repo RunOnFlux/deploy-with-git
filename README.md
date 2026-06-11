@@ -26,7 +26,7 @@ Environment variables are injected at runtime and never stored in your repositor
 
 ## Get Started
 
-1. Go to [cloud.runonflux.com/apps/register](https://cloud.runonflux.com/apps/register) and choose **Deploy With Git**
+1. Go to [orbit.app.runonflux.io/](https://orbit.app.runonflux.io/)
 2. Paste your repository URL and select your branch
 3. Set your port and any environment variables
 4. Click **Register** and your app is live

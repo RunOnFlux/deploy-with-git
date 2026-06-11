@@ -1,6 +1,6 @@
 # Deploying a Next.js App with PostgreSQL on Flux Network
 
-This is a Next.js todos demo that uses PostgreSQL via Prisma. It is designed for [Deploy With Git](https://cloud.runonflux.com/apps/register) with a managed database component defined in `flux.json`.
+This is a Next.js todos demo that uses PostgreSQL via Prisma. It is designed for [Deploy With Git](https://orbit.app.runonflux.io/) with a managed database component defined in `flux.json`.
 
 The app initializes its own schema during deploy using `pre-deploy.sh`, which retries until the database is reachable.
 
@@ -97,11 +97,11 @@ Make sure your repository is public, or have a [GitHub personal access token](ht
 
 Click the button below to open the deployment wizard pre-filled for this project:
 
-[<img width="140" height="28" alt="deploy3" src="https://github.com/user-attachments/assets/782abbc4-106a-4221-b87c-2879d5cc3400" />](https://cloud.runonflux.io/apps/register/orbit?repo=https://github.com/RunOnFlux/deploy-with-git&branch=master&projectPath=deploy-nextjs-db&plan=custom)
+[<img width="140" height="28" alt="deploy3" src="https://github.com/user-attachments/assets/782abbc4-106a-4221-b87c-2879d5cc3400" />](https://orbit.app.runonflux.io/?repo=https://github.com/RunOnFlux/deploy-with-git&branch=master&projectPath=deploy-nextjs-db&plan=custom)
 
 Or follow the manual steps:
 
-1. Go to [https://cloud.runonflux.com/apps/register](https://cloud.runonflux.com/apps/register) and choose **Deploy with Git**
+1. Go to [https://orbit.app.runonflux.io/](https://orbit.app.runonflux.io/)
 2. Paste your repository URL, branch, and project path: `deploy-nextjs-db/`
 3. Use the **custom** plan settings from `flux.json`
 4. Add the `DATABASE_URL` environment variable with your PostgreSQL connection string
@@ -115,7 +115,7 @@ https://YOUR-APP-NAME.app.runonflux.com
 
 > **Add Deploy to Flux button to your own project:**
 > ```
-> [<img width="140" height="28" alt="deploy3" src="https://github.com/user-attachments/assets/782abbc4-106a-4221-b87c-2879d5cc3400" />](https://cloud.runonflux.io/apps/register/orbit?repo=https://your-repo&branch=main&projectPath=deploy-nextjs-db&plan=custom)
+> [<img width="140" height="28" alt="deploy3" src="https://github.com/user-attachments/assets/782abbc4-106a-4221-b87c-2879d5cc3400" />](https://orbit.app.runonflux.io/?repo=https://your-repo&branch=main&projectPath=deploy-nextjs-db&plan=custom)
 > ```
 
 ---

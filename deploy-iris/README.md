@@ -4,7 +4,7 @@ This is a minimal Iris "Hello World" app ready to be deployed on [Flux Network](
 
 ## What is Deploy With Git?
 
-[Deploy With Git](https://cloud.runonflux.com/apps/register) lets you deploy directly from a Git repository. Flux automatically detects your framework, installs dependencies, builds, and runs your app across its decentralized network of nodes.
+[Deploy With Git](https://orbit.app.runonflux.io/) lets you deploy directly from a Git repository. Flux automatically detects your framework, installs dependencies, builds, and runs your app across its decentralized network of nodes.
 
 ---
 
@@ -29,11 +29,11 @@ Make sure your repository is public, or have a [GitHub personal access token](ht
 
 Click the button below to open the deployment wizard pre-filled for this project:
 
-[<img width="140" height="28" alt="deploy3" src="https://github.com/user-attachments/assets/782abbc4-106a-4221-b87c-2879d5cc3400" />](https://cloud.runonflux.io/apps/register/orbit?repo=https://github.com/RunOnFlux/deploy-with-git&branch=master&projectPath=deploy-iris&plan=free)
+[<img width="140" height="28" alt="deploy3" src="https://github.com/user-attachments/assets/782abbc4-106a-4221-b87c-2879d5cc3400" />](https://orbit.app.runonflux.io/?repo=https://github.com/RunOnFlux/deploy-with-git&branch=master&projectPath=deploy-iris&plan=free)
 
 Or follow the manual steps:
 
-1. Go to [https://cloud.runonflux.com/apps/register](https://cloud.runonflux.com/apps/register) and choose Deploy with Git
+1. Go to [https://orbit.app.runonflux.io/](https://orbit.app.runonflux.io/)
 2. **Login or create an account**
 3. Click **Start Deploying** on your preferred plan
 4. Paste your **Repository URL**, select your **branch** and the **path** (e.g., `deploy-iris/` if it's inside a monorepo), then click **Continue**
@@ -49,7 +49,7 @@ https://YOUR-APP-NAME.app.runonflux.com
 
 > **Add Deploy to Flux button to your own project:**
 > ```
-> [<img width="140" height="28" alt="deploy3" src="https://github.com/user-attachments/assets/782abbc4-106a-4221-b87c-2879d5cc3400" />](https://cloud.runonflux.io/apps/register/orbit?repo=https://your-repo&branch=main&projectPath=/)
+> [<img width="140" height="28" alt="deploy3" src="https://github.com/user-attachments/assets/782abbc4-106a-4221-b87c-2879d5cc3400" />](https://orbit.app.runonflux.io/?repo=https://your-repo&branch=main&projectPath=/)
 > ```
 
 ---
