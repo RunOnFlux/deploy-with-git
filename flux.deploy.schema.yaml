@@ -20,7 +20,8 @@ properties:
     - standard
     - pro
     - custom
-    description: Hosting plan. Choose 'custom' to specify exact resource limits.
+    description: Hosting plan. Choose 'custom' to specify exact resource limits. Required
+      to be 'custom' when database is configured.
   appPort:
     type: integer
     minimum: 1
@@ -140,27 +141,86 @@ properties:
   region:
     type: string
     description: Preferred sub-region for deployment.
-if:
-  properties:
-    plan:
-      const: custom
-  required:
-  - plan
-then:
-  properties:
-    instances:
-      type: integer
-      minimum: 1
-      description: Number of nodes to deploy the application across.
-    cpu:
-      type: number
-      exclusiveMinimum: 0
-      description: CPU cores allocated per instance (e.g. 0.5, 1, 2).
-    ram:
-      type: integer
-      minimum: 128
-      description: RAM allocated per instance in MB (e.g. 512, 1024, 2048).
-    hdd:
-      type: integer
-      minimum: 1
-      description: Persistent storage allocated per instance in GB.
+  instances:
+    type: integer
+    minimum: 1
+    description: Number of nodes to deploy the application across. Minimum 3 when
+      database is configured.
+  cpu:
+    type: number
+    exclusiveMinimum: 0
+    description: CPU cores allocated per application instance (e.g. 0.5, 1, 2).
+  ram:
+    type: integer
+    minimum: 128
+    description: RAM allocated per application instance in MB (e.g. 512, 1024, 2048).
+  hdd:
+    type: integer
+    minimum: 1
+    description: Persistent storage allocated per application instance in GB.
+  database:
+    type: object
+    additionalProperties: false
+    required:
+    - type
+    - name
+    - cpu
+    - ram
+    - hdd
+    description: Optional managed database component. Requires plan 'custom' and
+      at least 3 application instances.
+    properties:
+      type:
+        type: string
+        enum:
+        - mysql
+        - pg
+        - mongo
+        description: Database engine type.
+      name:
+        type: string
+        minLength: 1
+        description: Database name.
+      cpu:
+        type: number
+        exclusiveMinimum: 0
+        description: CPU cores allocated per database instance (e.g. 0.5, 1, 2).
+      ram:
+        type: integer
+        minimum: 128
+        description: RAM allocated per database instance in MB (e.g. 512, 1024, 2048).
+      hdd:
+        type: integer
+        minimum: 1
+        description: Persistent storage allocated per database instance in GB.
+allOf:
+- if:
+    properties:
+      plan:
+        const: custom
+    required:
+    - plan
+  then:
+    required:
+    - instances
+    - cpu
+    - ram
+    - hdd
+- if:
+    required:
+    - database
+  then:
+    properties:
+      plan:
+        const: custom
+      instances:
+        type: integer
+        minimum: 3
+        description: Number of nodes to deploy the application across. Minimum 3 when
+          database is configured.
+    required:
+    - plan
+    - instances
+    - cpu
+    - ram
+    - hdd
