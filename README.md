@@ -71,6 +71,7 @@ Environment variables are injected at runtime and never stored in your repositor
 | Framework | Guide |
 |---|---|
 | [Next.js](https://nextjs.org) | [deploy-nextjs](./deploy-nextjs/) |
+| [Next.js + PostgreSQL](https://nextjs.org) | [deploy-nextjs-db](./deploy-nextjs-db/) |
 | [Nuxt](https://nuxt.com) | [deploy-nuxt](./deploy-nuxt/) |
 | [Remix](https://remix.run) | [deploy-remix](./deploy-remix/) |
 | [Astro](https://astro.build) | [deploy-astro](./deploy-astro/) |
