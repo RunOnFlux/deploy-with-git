@@ -193,6 +193,23 @@ properties:
         type: integer
         minimum: 1
         description: Persistent storage allocated per database instance in GB.
+  release:
+    type: object
+    additionalProperties: false
+    properties:
+      include:
+        type: array
+        items:
+          type: string
+          minLength: 1
+        description: Files or directories (relative to PROJECT_PATH) copied into
+          the release after build packaging.
+      exclude:
+        type: array
+        items:
+          type: string
+          minLength: 1
+        description: Optional paths to omit from the release.
 allOf:
 - if:
     properties:
