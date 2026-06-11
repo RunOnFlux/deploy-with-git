@@ -37,8 +37,6 @@ Environment variables are injected at runtime and never stored in your repositor
 
 ## Example Apps by Framework
 
-### Node.js
-
 <table width="100%">
   <thead>
     <tr>
@@ -48,6 +46,9 @@ Environment variables are injected at runtime and never stored in your repositor
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td colspan="3"><strong>Node.js</strong></td>
+    </tr>
     <tr>
       <td><a href="https://expressjs.com">Express</a></td>
       <td><a href="./deploy-express/">deploy-express/</a></td>
@@ -73,20 +74,9 @@ Environment variables are injected at runtime and never stored in your repositor
       <td><a href="./deploy-loopback/">deploy-loopback/</a></td>
       <td align="center"><a href="https://orbit.app.runonflux.io/?repo=https://github.com/RunOnFlux/deploy-with-git&branch=master&projectPath=deploy-loopback&plan=free"><img width="140" height="28" alt="Deploy on Flux" src="https://github.com/user-attachments/assets/782abbc4-106a-4221-b87c-2879d5cc3400" /></a></td>
     </tr>
-  </tbody>
-</table>
-
-### Bun
-
-<table width="100%">
-  <thead>
     <tr>
-      <th align="left">Framework</th>
-      <th align="left">Guide</th>
-      <th align="center">Deploy</th>
+      <td colspan="3"><strong>Bun</strong></td>
     </tr>
-  </thead>
-  <tbody>
     <tr>
       <td><a href="https://elysiajs.com">Elysia</a></td>
       <td><a href="./deploy-elysia/">deploy-elysia/</a></td>
@@ -97,20 +87,9 @@ Environment variables are injected at runtime and never stored in your repositor
       <td><a href="./deploy-hono-bun/">deploy-hono-bun/</a></td>
       <td align="center"><a href="https://orbit.app.runonflux.io/?repo=https://github.com/RunOnFlux/deploy-with-git&branch=master&projectPath=deploy-hono-bun&plan=free"><img width="140" height="28" alt="Deploy on Flux" src="https://github.com/user-attachments/assets/782abbc4-106a-4221-b87c-2879d5cc3400" /></a></td>
     </tr>
-  </tbody>
-</table>
-
-### Frontend
-
-<table width="100%">
-  <thead>
     <tr>
-      <th align="left">Framework</th>
-      <th align="left">Guide</th>
-      <th align="center">Deploy</th>
+      <td colspan="3"><strong>Frontend</strong></td>
     </tr>
-  </thead>
-  <tbody>
     <tr>
       <td><a href="https://react.dev">React</a></td>
       <td><a href="./deploy-react/">deploy-react/</a></td>
@@ -146,20 +125,9 @@ Environment variables are injected at runtime and never stored in your repositor
       <td><a href="./deploy-vite/">deploy-vite/</a></td>
       <td align="center"><a href="https://orbit.app.runonflux.io/?repo=https://github.com/RunOnFlux/deploy-with-git&branch=master&projectPath=deploy-vite&plan=free"><img width="140" height="28" alt="Deploy on Flux" src="https://github.com/user-attachments/assets/782abbc4-106a-4221-b87c-2879d5cc3400" /></a></td>
     </tr>
-  </tbody>
-</table>
-
-### Full-Stack & SSR
-
-<table width="100%">
-  <thead>
     <tr>
-      <th align="left">Framework</th>
-      <th align="left">Guide</th>
-      <th align="center">Deploy</th>
+      <td colspan="3"><strong>Full-Stack & SSR</strong></td>
     </tr>
-  </thead>
-  <tbody>
     <tr>
       <td><a href="https://nextjs.org">Next.js</a></td>
       <td><a href="./deploy-nextjs/">deploy-nextjs/</a></td>
@@ -205,20 +173,9 @@ Environment variables are injected at runtime and never stored in your repositor
       <td><a href="./deploy-tanstack-start/">deploy-tanstack-start/</a></td>
       <td align="center"><a href="https://orbit.app.runonflux.io/?repo=https://github.com/RunOnFlux/deploy-with-git&branch=master&projectPath=deploy-tanstack-start&plan=free"><img width="140" height="28" alt="Deploy on Flux" src="https://github.com/user-attachments/assets/782abbc4-106a-4221-b87c-2879d5cc3400" /></a></td>
     </tr>
-  </tbody>
-</table>
-
-### Static Site Generators
-
-<table width="100%">
-  <thead>
     <tr>
-      <th align="left">Framework</th>
-      <th align="left">Guide</th>
-      <th align="center">Deploy</th>
+      <td colspan="3"><strong>Static Site Generators</strong></td>
     </tr>
-  </thead>
-  <tbody>
     <tr>
       <td><a href="https://www.gatsbyjs.com">Gatsby</a></td>
       <td><a href="./deploy-gatsby/">deploy-gatsby/</a></td>
@@ -254,20 +211,9 @@ Environment variables are injected at runtime and never stored in your repositor
       <td><a href="./deploy-sphinx/">deploy-sphinx/</a></td>
       <td align="center"><a href="https://orbit.app.runonflux.io/?repo=https://github.com/RunOnFlux/deploy-with-git&branch=master&projectPath=deploy-sphinx&plan=free"><img width="140" height="28" alt="Deploy on Flux" src="https://github.com/user-attachments/assets/782abbc4-106a-4221-b87c-2879d5cc3400" /></a></td>
     </tr>
-  </tbody>
-</table>
-
-### Python
-
-<table width="100%">
-  <thead>
     <tr>
-      <th align="left">Framework</th>
-      <th align="left">Guide</th>
-      <th align="center">Deploy</th>
+      <td colspan="3"><strong>Python</strong></td>
     </tr>
-  </thead>
-  <tbody>
     <tr>
       <td><a href="https://www.djangoproject.com">Django</a></td>
       <td><a href="./deploy-django/">deploy-django/</a></td>
@@ -308,39 +254,17 @@ Environment variables are injected at runtime and never stored in your repositor
       <td><a href="./deploy-streamlit/">deploy-streamlit/</a></td>
       <td align="center"><a href="https://orbit.app.runonflux.io/?repo=https://github.com/RunOnFlux/deploy-with-git&branch=master&projectPath=deploy-streamlit&plan=free"><img width="140" height="28" alt="Deploy on Flux" src="https://github.com/user-attachments/assets/782abbc4-106a-4221-b87c-2879d5cc3400" /></a></td>
     </tr>
-  </tbody>
-</table>
-
-### Ruby
-
-<table width="100%">
-  <thead>
     <tr>
-      <th align="left">Framework</th>
-      <th align="left">Guide</th>
-      <th align="center">Deploy</th>
+      <td colspan="3"><strong>Ruby</strong></td>
     </tr>
-  </thead>
-  <tbody>
     <tr>
       <td><a href="https://rubyonrails.org">Rails</a></td>
       <td><a href="./deploy-rails/">deploy-rails/</a></td>
       <td align="center"><a href="https://orbit.app.runonflux.io/?repo=https://github.com/RunOnFlux/deploy-with-git&branch=master&projectPath=deploy-rails&plan=free"><img width="140" height="28" alt="Deploy on Flux" src="https://github.com/user-attachments/assets/782abbc4-106a-4221-b87c-2879d5cc3400" /></a></td>
     </tr>
-  </tbody>
-</table>
-
-### PHP
-
-<table width="100%">
-  <thead>
     <tr>
-      <th align="left">Framework</th>
-      <th align="left">Guide</th>
-      <th align="center">Deploy</th>
+      <td colspan="3"><strong>PHP</strong></td>
     </tr>
-  </thead>
-  <tbody>
     <tr>
       <td><a href="https://laravel.com">Laravel</a></td>
       <td><a href="./deploy-laravel/">deploy-laravel/</a></td>
@@ -351,20 +275,9 @@ Environment variables are injected at runtime and never stored in your repositor
       <td><a href="./deploy-symfony/">deploy-symfony/</a></td>
       <td align="center"><a href="https://orbit.app.runonflux.io/?repo=https://github.com/RunOnFlux/deploy-with-git&branch=master&projectPath=deploy-symfony&plan=free"><img width="140" height="28" alt="Deploy on Flux" src="https://github.com/user-attachments/assets/782abbc4-106a-4221-b87c-2879d5cc3400" /></a></td>
     </tr>
-  </tbody>
-</table>
-
-### Java
-
-<table width="100%">
-  <thead>
     <tr>
-      <th align="left">Framework</th>
-      <th align="left">Guide</th>
-      <th align="center">Deploy</th>
+      <td colspan="3"><strong>Java</strong></td>
     </tr>
-  </thead>
-  <tbody>
     <tr>
       <td><a href="https://spring.io/projects/spring-boot">Spring Boot</a></td>
       <td><a href="./deploy-spring-boot/">deploy-spring-boot/</a></td>
@@ -380,20 +293,9 @@ Environment variables are injected at runtime and never stored in your repositor
       <td><a href="./deploy-micronaut/">deploy-micronaut/</a></td>
       <td align="center"><a href="https://orbit.app.runonflux.io/?repo=https://github.com/RunOnFlux/deploy-with-git&branch=master&projectPath=deploy-micronaut&plan=free"><img width="140" height="28" alt="Deploy on Flux" src="https://github.com/user-attachments/assets/782abbc4-106a-4221-b87c-2879d5cc3400" /></a></td>
     </tr>
-  </tbody>
-</table>
-
-### .NET
-
-<table width="100%">
-  <thead>
     <tr>
-      <th align="left">Framework</th>
-      <th align="left">Guide</th>
-      <th align="center">Deploy</th>
+      <td colspan="3"><strong>.NET</strong></td>
     </tr>
-  </thead>
-  <tbody>
     <tr>
       <td><a href="https://dotnet.microsoft.com/apps/aspnet">ASP.NET Core</a></td>
       <td><a href="./deploy-aspnet-core/">deploy-aspnet-core/</a></td>
@@ -414,20 +316,9 @@ Environment variables are injected at runtime and never stored in your repositor
       <td><a href="./deploy-worker-service/">deploy-worker-service/</a></td>
       <td align="center"><a href="https://orbit.app.runonflux.io/?repo=https://github.com/RunOnFlux/deploy-with-git&branch=master&projectPath=deploy-worker-service&plan=free"><img width="140" height="28" alt="Deploy on Flux" src="https://github.com/user-attachments/assets/782abbc4-106a-4221-b87c-2879d5cc3400" /></a></td>
     </tr>
-  </tbody>
-</table>
-
-### Go
-
-<table width="100%">
-  <thead>
     <tr>
-      <th align="left">Framework</th>
-      <th align="left">Guide</th>
-      <th align="center">Deploy</th>
+      <td colspan="3"><strong>Go</strong></td>
     </tr>
-  </thead>
-  <tbody>
     <tr>
       <td><a href="https://gin-gonic.com">Gin</a></td>
       <td><a href="./deploy-gin/">deploy-gin/</a></td>
@@ -453,20 +344,9 @@ Environment variables are injected at runtime and never stored in your repositor
       <td><a href="./deploy-iris/">deploy-iris/</a></td>
       <td align="center"><a href="https://orbit.app.runonflux.io/?repo=https://github.com/RunOnFlux/deploy-with-git&branch=master&projectPath=deploy-iris&plan=free"><img width="140" height="28" alt="Deploy on Flux" src="https://github.com/user-attachments/assets/782abbc4-106a-4221-b87c-2879d5cc3400" /></a></td>
     </tr>
-  </tbody>
-</table>
-
-### Rust
-
-<table width="100%">
-  <thead>
     <tr>
-      <th align="left">Framework</th>
-      <th align="left">Guide</th>
-      <th align="center">Deploy</th>
+      <td colspan="3"><strong>Rust</strong></td>
     </tr>
-  </thead>
-  <tbody>
     <tr>
       <td><a href="https://actix.rs">Actix Web</a></td>
       <td><a href="./deploy-actix-web/">deploy-actix-web/</a></td>
