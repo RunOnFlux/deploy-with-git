@@ -28,6 +28,8 @@ Example Flux value:
 REDIS_URL=rediss://:password@redis:6380
 ```
 
+Flux managed Redis uses TLS with a self-signed certificate. The app accepts that by default for `rediss://` URLs. Set `REDIS_TLS_REJECT_UNAUTHORIZED=true` only if your Redis instance uses a publicly trusted certificate.
+
 No Redis credentials are stored in the repository.
 
 ---

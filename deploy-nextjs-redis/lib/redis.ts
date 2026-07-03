@@ -1,4 +1,4 @@
-import Redis from "ioredis";
+import Redis, { type RedisOptions } from "ioredis";
 
 const TODOS_INDEX_KEY = "flux:todos:index";
 
@@ -21,8 +21,8 @@ function logRedisError(message: string, error?: unknown): void {
   console.error(`[redis] ${message}${detail}`);
 }
 
-function createClient(url: string): Redis {
-  const client = new Redis(url, {
+function buildRedisOptions(url: string): RedisOptions {
+  const options: RedisOptions = {
     maxRetriesPerRequest: null,
     enableReadyCheck: true,
     retryStrategy(times) {
@@ -34,7 +34,23 @@ function createClient(url: string): Redis {
       logRedisError("Connection error, will reconnect", error);
       return true;
     },
-  });
+  };
+
+  // Flux managed Redis uses TLS (rediss://) with a self-signed certificate.
+  if (url.startsWith("rediss://")) {
+    const rejectUnauthorized = process.env.REDIS_TLS_REJECT_UNAUTHORIZED === "true";
+    options.tls = { rejectUnauthorized };
+
+    if (!rejectUnauthorized) {
+      logRedis("TLS enabled with self-signed certificate support (rejectUnauthorized=false)");
+    }
+  }
+
+  return options;
+}
+
+function createClient(url: string): Redis {
+  const client = new Redis(url, buildRedisOptions(url));
 
   client.on("connect", () => {
     logRedis("Connected");
