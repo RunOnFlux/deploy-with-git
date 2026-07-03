@@ -1,0 +1,13 @@
+version: '1.0'
+plan: custom
+appPort: 3000
+instances: 3
+cpu: 1
+ram: 512
+hdd: 10
+redis:
+  cpu: 0.5
+  ram: 512
+release:
+  include:
+  - next.config.ts
