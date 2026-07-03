@@ -21,7 +21,7 @@ properties:
     - pro
     - custom
     description: Hosting plan. Choose 'custom' to specify exact resource limits. Required
-      to be 'custom' when database is configured.
+      to be 'custom' when database or redis is configured.
   appPort:
     type: integer
     minimum: 1
@@ -145,7 +145,7 @@ properties:
     type: integer
     minimum: 1
     description: Number of nodes to deploy the application across. Minimum 3 when
-      database is configured.
+      database or redis is configured.
   cpu:
     type: number
     exclusiveMinimum: 0
@@ -193,6 +193,23 @@ properties:
         type: integer
         minimum: 1
         description: Persistent storage allocated per database instance in GB.
+  redis:
+    type: object
+    additionalProperties: false
+    required:
+    - cpu
+    - ram
+    description: Optional managed Redis component. Requires plan 'custom' and
+      at least 3 application instances.
+    properties:
+      cpu:
+        type: number
+        exclusiveMinimum: 0
+        description: CPU cores allocated per Redis instance (e.g. 0.5, 1, 2).
+      ram:
+        type: integer
+        minimum: 128
+        description: RAM allocated per Redis instance in MB (e.g. 512, 1024, 2048).
   release:
     type: object
     additionalProperties: false
@@ -224,8 +241,11 @@ allOf:
     - ram
     - hdd
 - if:
-    required:
-    - database
+    anyOf:
+    - required:
+      - database
+    - required:
+      - redis
   then:
     properties:
       plan:
@@ -234,7 +254,7 @@ allOf:
         type: integer
         minimum: 3
         description: Number of nodes to deploy the application across. Minimum 3 when
-          database is configured.
+          database or redis is configured.
     required:
     - plan
     - instances
