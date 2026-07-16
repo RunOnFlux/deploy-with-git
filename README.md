@@ -139,6 +139,11 @@ Environment variables are injected at runtime and never stored in your repositor
       <td align="center"><a href="https://orbit.app.runonflux.io/?repo=https://github.com/RunOnFlux/deploy-with-git&branch=master&projectPath=deploy-nextjs-db&plan=custom"><img width="140" height="28" alt="Deploy on Flux" src="https://github.com/user-attachments/assets/782abbc4-106a-4221-b87c-2879d5cc3400" /></a></td>
     </tr>
     <tr>
+      <td><a href="https://nextjs.org">Next.js + MySQL</a></td>
+      <td><a href="./deploy-nextjs-mysql/">deploy-nextjs-mysql/</a></td>
+      <td align="center"><a href="https://orbit.app.runonflux.io/?repo=https://github.com/RunOnFlux/deploy-with-git&branch=master&projectPath=deploy-nextjs-mysql&plan=custom"><img width="140" height="28" alt="Deploy on Flux" src="https://github.com/user-attachments/assets/782abbc4-106a-4221-b87c-2879d5cc3400" /></a></td>
+    </tr>
+    <tr>
       <td><a href="https://nuxt.com">Nuxt</a></td>
       <td><a href="./deploy-nuxt/">deploy-nuxt/</a></td>
       <td align="center"><a href="https://orbit.app.runonflux.io/?repo=https://github.com/RunOnFlux/deploy-with-git&branch=master&projectPath=deploy-nuxt&plan=free"><img width="140" height="28" alt="Deploy on Flux" src="https://github.com/user-attachments/assets/782abbc4-106a-4221-b87c-2879d5cc3400" /></a></td>
