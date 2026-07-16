@@ -155,7 +155,7 @@
       "properties": {
         "type": {
           "type": "string",
-          "enum": ["mysql", "pg", "mongo"],
+          "enum": ["mysql", "mariadb", "pg", "mongo"],
           "description": "Database engine type."
         },
         "name": {
