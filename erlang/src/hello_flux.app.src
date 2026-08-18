@@ -1,0 +1,6 @@
+{application, hello_flux,
+ [{description, "A minimal Erlang HTTP server for Flux Deploy With Git"},
+  {vsn, "1.0.0"},
+  {registered, []},
+  {mod, {hello_flux_app, []}},
+  {applications, [kernel, stdlib]}]}.

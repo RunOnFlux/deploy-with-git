@@ -8,7 +8,7 @@ A collection of "Hello World" apps demonstrating how to deploy any framework to 
 
 [Deploy With Git](https://docs.runonflux.com/fluxcloud/register-new-app/deploy-with-git/) lets you deploy directly from a GitHub repository to Flux's decentralized cloud in minutes. Point it at your repo, and Flux handles the rest:
 
-- **Auto-detects your framework**: Node.js, Bun, Python, Ruby, PHP, Java, .NET, Go, Rust, and more
+- **Auto-detects your framework**: Node.js, Bun, Python, Ruby, PHP, Elixir, Erlang, Dart, Java, .NET, Go, Rust, and more
 - **Installs dependencies**: `npm install`, `pip install`, `composer install`, `bundle install`, `go mod download`, `cargo build`, etc.
 - **Builds your app**: runs your build script automatically when detected
 - **Runs your server**: starts the right process for your framework with zero configuration
@@ -279,6 +279,30 @@ Environment variables are injected at runtime and never stored in your repositor
       <td><a href="https://symfony.com">Symfony</a></td>
       <td><a href="./symfony/">symfony/</a></td>
       <td align="center"><a href="https://orbit.app.runonflux.io/?repo=https://github.com/RunOnFlux/deploy-with-git-samples&branch=master&projectPath=symfony&plan=free"><img width="140" height="28" alt="Deploy on Flux" src="https://github.com/user-attachments/assets/782abbc4-106a-4221-b87c-2879d5cc3400" /></a></td>
+    </tr>
+    <tr>
+      <td colspan="3"><strong>Elixir</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://elixir-lang.org">Elixir/OTP</a></td>
+      <td><a href="./elixir/">elixir/</a></td>
+      <td align="center"><a href="https://orbit.app.runonflux.io/?repo=https://github.com/RunOnFlux/deploy-with-git-samples&branch=master&projectPath=elixir&plan=free"><img width="140" height="28" alt="Deploy on Flux" src="https://github.com/user-attachments/assets/782abbc4-106a-4221-b87c-2879d5cc3400" /></a></td>
+    </tr>
+    <tr>
+      <td colspan="3"><strong>Erlang</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.erlang.org">Erlang/OTP</a></td>
+      <td><a href="./erlang/">erlang/</a></td>
+      <td align="center"><a href="https://orbit.app.runonflux.io/?repo=https://github.com/RunOnFlux/deploy-with-git-samples&branch=master&projectPath=erlang&plan=free"><img width="140" height="28" alt="Deploy on Flux" src="https://github.com/user-attachments/assets/782abbc4-106a-4221-b87c-2879d5cc3400" /></a></td>
+    </tr>
+    <tr>
+      <td colspan="3"><strong>Dart</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://dart.dev/server">Dart HTTP</a></td>
+      <td><a href="./dart/">dart/</a></td>
+      <td align="center"><a href="https://orbit.app.runonflux.io/?repo=https://github.com/RunOnFlux/deploy-with-git-samples&branch=master&projectPath=dart&plan=free"><img width="140" height="28" alt="Deploy on Flux" src="https://github.com/user-attachments/assets/782abbc4-106a-4221-b87c-2879d5cc3400" /></a></td>
     </tr>
     <tr>
       <td colspan="3"><strong>Java</strong></td>

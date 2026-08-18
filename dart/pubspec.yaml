@@ -1,0 +1,5 @@
+name: hello_flux
+description: A minimal Dart HTTP server for Flux Deploy With Git.
+version: 1.0.0
+environment:
+  sdk: '>=3.4.0 <4.0.0'
